@@ -396,7 +396,7 @@
       if (cs->printing_suspended) action = NEW_SRV_ACTION_PRINT_RESUME; %>
 <s:submit action="action" />
 <%    } %>
-<%    if (global->score_system == SCORE_OLYMPIAD && !global->is_virtual) {
+<%    if (global->score_system == SCORE_OLYMPIAD) {
       action = NEW_SRV_ACTION_SET_JUDGING_MODE;
       if (!cs->accepting_mode) action = NEW_SRV_ACTION_SET_ACCEPTING_MODE; %>
 <s:submit action="action" />
